@@ -22,7 +22,7 @@
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = prefpane/Info.plist; sourceTree = "<group>"; };
-		8D202CF80486D31800D8A456 /* fusion-meta.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fusion-meta.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D202CF80486D31800D8A456 /* Plug-Ins.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Plug-Ins.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDE9030128AFEA100C7EF0E /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
 		BCDE90A8128AFEDC00C7EF0E /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "buildtools/base-style.xcconfig"; sourceTree = "<group>"; };
 		BCDE90A9128AFEDC00C7EF0E /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "buildtools/debug-style.xcconfig"; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		19C28FB8FE9D52D311CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8D202CF80486D31800D8A456 /* fusion-meta.prefPane */,
+				8D202CF80486D31800D8A456 /* Plug-Ins.prefPane */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,7 +176,7 @@
 			name = "fusion-meta";
 			productInstallPath = "$(HOME)/Library/PreferencePanes";
 			productName = "fusion-meta";
-			productReference = 8D202CF80486D31800D8A456 /* fusion-meta.prefPane */;
+			productReference = 8D202CF80486D31800D8A456 /* Plug-Ins.prefPane */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +262,7 @@
 			baseConfigurationReference = BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = prefpane/Info.plist;
-				PRODUCT_NAME = "fusion-meta";
+				PRODUCT_NAME = "Plug-Ins";
 			};
 			name = Debug;
 		};
@@ -271,7 +271,7 @@
 			baseConfigurationReference = BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = prefpane/Info.plist;
-				PRODUCT_NAME = "fusion-meta";
+				PRODUCT_NAME = "Plug-Ins";
 			};
 			name = Release;
 		};
