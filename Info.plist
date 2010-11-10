@@ -24,5 +24,9 @@
 	<string>1.0</string>
 	<key>NSPrincipalClass</key>
 	<string>WOFMenu</string>
+	<key>WOFPlugInDependencies</key>
+	<array>
+		<string>com.wincent.fusion.prefs</string>
+	</array>
 </dict>
 </plist>
