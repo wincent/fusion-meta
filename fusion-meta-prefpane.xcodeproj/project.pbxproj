@@ -159,9 +159,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D202CE80486D31800D8A456 /* fusion-meta */ = {
+		8D202CE80486D31800D8A456 /* Plug-Ins.prefPane */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "fusion-meta" */;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "Plug-Ins.prefPane" */;
 			buildPhases = (
 				8D202CE90486D31800D8A456 /* Headers */,
 				8D202CEC0486D31800D8A456 /* Resources */,
@@ -173,7 +173,7 @@
 			);
 			dependencies = (
 			);
-			name = "fusion-meta";
+			name = "Plug-Ins.prefPane";
 			productInstallPath = "$(HOME)/Library/PreferencePanes";
 			productName = "fusion-meta";
 			productReference = 8D202CF80486D31800D8A456 /* Plug-Ins.prefPane */;
@@ -198,7 +198,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D202CE80486D31800D8A456 /* fusion-meta */,
+				8D202CE80486D31800D8A456 /* Plug-Ins.prefPane */,
 			);
 		};
 /* End PBXProject section */
@@ -292,7 +292,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "fusion-meta" */ = {
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "Plug-Ins.prefPane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DBD214908BA80EA00186707 /* Debug */,
