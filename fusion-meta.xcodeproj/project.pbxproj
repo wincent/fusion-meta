@@ -10,7 +10,39 @@
 		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
 		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
 		BCA4097F128B17C800727646 /* WOFMeta.m in Sources */ = {isa = PBXBuildFile; fileRef = BCA4097E128B17C800727646 /* WOFMeta.m */; };
+		BCA40B60128B1AB800727646 /* Plug-Ins.prefPane in Copy Preference panes */ = {isa = PBXBuildFile; fileRef = BCA40AC8128B19B000727646 /* Plug-Ins.prefPane */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BCA40AC7128B19B000727646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8D202CF80486D31800D8A456;
+			remoteInfo = "fusion-meta";
+		};
+		BCA40B5C128B1A6B00727646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D202CE80486D31800D8A456 /* Plug-Ins.prefPane */;
+			remoteInfo = "Plug-Ins.prefPane";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BCA40B69128B1AC400727646 /* Copy Preference panes */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = Contents/PreferencePanes;
+			dstSubfolderSpec = 1;
+			files = (
+				BCA40B60128B1AB800727646 /* Plug-Ins.prefPane in Copy Preference panes */,
+			);
+			name = "Copy Preference panes";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -28,6 +60,7 @@
 		BCA4097D128B17C800727646 /* WOFMeta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WOFMeta.h; sourceTree = "<group>"; };
 		BCA4097E128B17C800727646 /* WOFMeta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WOFMeta.m; sourceTree = "<group>"; };
 		BCA40ABA128B190C00727646 /* WOFPrefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WOFPrefs.h; path = "../fusion-prefs/WOFPrefs.h"; sourceTree = SOURCE_ROOT; };
+		BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = "fusion-meta-prefpane.xcodeproj"; sourceTree = "<group>"; };
 		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
@@ -141,6 +174,7 @@
 		BCA40AB9128B18FB00727646 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */,
 				BCA40ABB128B198800727646 /* fusion-prefs */,
 			);
 			name = Dependencies;
@@ -154,6 +188,14 @@
 			name = "fusion-prefs";
 			sourceTree = "<group>";
 		};
+		BCA40AC1128B19B000727646 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BCA40AC8128B19B000727646 /* Plug-Ins.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -162,12 +204,14 @@
 			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "fusion-meta" */;
 			buildPhases = (
 				8D5B49AF048680CD000E48DA /* Resources */,
+				BCA40B69128B1AC400727646 /* Copy Preference panes */,
 				8D5B49B1048680CD000E48DA /* Sources */,
 				8D5B49B3048680CD000E48DA /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BCA40B5D128B1A6B00727646 /* PBXTargetDependency */,
 			);
 			name = "fusion-meta";
 			productInstallPath = "$(HOME)/Library/Bundles";
@@ -193,12 +237,28 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* fusion-meta */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = BCA40AC1128B19B000727646 /* Products */;
+					ProjectRef = BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D5B49AC048680CD000E48DA /* fusion-meta */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		BCA40AC8128B19B000727646 /* Plug-Ins.prefPane */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Plug-Ins.prefPane";
+			remoteRef = BCA40AC7128B19B000727646 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D5B49AF048680CD000E48DA /* Resources */ = {
@@ -221,6 +281,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BCA40B5D128B1A6B00727646 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Plug-Ins.prefPane";
+			targetProxy = BCA40B5C128B1A6B00727646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
