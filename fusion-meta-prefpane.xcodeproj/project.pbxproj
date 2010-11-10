@@ -25,6 +25,7 @@
 		32DBCFA20370C41700C91783 /* fusion-meta_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fusion-meta_Prefix.pch"; path = "prefpane/fusion-meta_Prefix.pch"; sourceTree = "<group>"; };
 		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = prefpane/Info.plist; sourceTree = "<group>"; };
 		8D202CF80486D31800D8A456 /* fusion-meta.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fusion-meta.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCDE9030128AFEA100C7EF0E /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
 		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
 		F506C03C013D9D7901CA16C8 /* fusion_metaPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fusion_metaPref.h; path = prefpane/fusion_metaPref.h; sourceTree = "<group>"; };
 		F506C03D013D9D7901CA16C8 /* fusion_metaPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fusion_metaPref.m; path = prefpane/fusion_metaPref.m; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		089C166AFE841209C02AAC07 /* fusion-meta */ = {
 			isa = PBXGroup;
 			children = (
+				BCDE902F128AFE9000C7EF0E /* Submodules */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32DBCFA10370C40200C91783 /* Other Sources */,
 				089C167CFE841241C02AAC07 /* Resources */,
@@ -120,6 +122,14 @@
 			name = "Other Sources";
 			sourceTree = "<group>";
 		};
+		BCDE902F128AFE9000C7EF0E /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				BCDE9030128AFEA100C7EF0E /* buildtools */,
+			);
+			name = Submodules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -160,7 +170,7 @@
 /* Begin PBXProject section */
 		089C1669FE841209C02AAC07 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "fusion-meta" */;
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "fusion-meta-prefpane" */;
 			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -306,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "fusion-meta" */ = {
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "fusion-meta-prefpane" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1DBD214D08BA80EA00186707 /* Debug */,
