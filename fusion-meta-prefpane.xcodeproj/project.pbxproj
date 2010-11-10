@@ -26,6 +26,11 @@
 		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = prefpane/Info.plist; sourceTree = "<group>"; };
 		8D202CF80486D31800D8A456 /* fusion-meta.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fusion-meta.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDE9030128AFEA100C7EF0E /* buildtools */ = {isa = PBXFileReference; lastKnownFileType = folder; path = buildtools; sourceTree = "<group>"; };
+		BCDE90A8128AFEDC00C7EF0E /* base-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "base-style.xcconfig"; path = "buildtools/base-style.xcconfig"; sourceTree = "<group>"; };
+		BCDE90A9128AFEDC00C7EF0E /* debug-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "debug-style.xcconfig"; path = "buildtools/debug-style.xcconfig"; sourceTree = "<group>"; };
+		BCDE90AA128AFEDC00C7EF0E /* loadable-bundle-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "loadable-bundle-target.xcconfig"; path = "buildtools/loadable-bundle-target.xcconfig"; sourceTree = "<group>"; };
+		BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "pref-pane-target.xcconfig"; path = "buildtools/pref-pane-target.xcconfig"; sourceTree = "<group>"; };
+		BCDE90AC128AFEDC00C7EF0E /* release-style.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "release-style.xcconfig"; path = "buildtools/release-style.xcconfig"; sourceTree = "<group>"; };
 		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
 		F506C03C013D9D7901CA16C8 /* fusion_metaPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fusion_metaPref.h; path = prefpane/fusion_metaPref.h; sourceTree = "<group>"; };
 		F506C03D013D9D7901CA16C8 /* fusion_metaPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fusion_metaPref.m; path = prefpane/fusion_metaPref.m; sourceTree = "<group>"; };
@@ -49,6 +54,7 @@
 		089C166AFE841209C02AAC07 /* fusion-meta */ = {
 			isa = PBXGroup;
 			children = (
+				BCDE90A7128AFEC200C7EF0E /* Configuration */,
 				BCDE902F128AFE9000C7EF0E /* Submodules */,
 				08FB77AFFE84173DC02AAC07 /* Classes */,
 				32DBCFA10370C40200C91783 /* Other Sources */,
@@ -128,6 +134,18 @@
 				BCDE9030128AFEA100C7EF0E /* buildtools */,
 			);
 			name = Submodules;
+			sourceTree = "<group>";
+		};
+		BCDE90A7128AFEC200C7EF0E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				BCDE90A8128AFEDC00C7EF0E /* base-style.xcconfig */,
+				BCDE90A9128AFEDC00C7EF0E /* debug-style.xcconfig */,
+				BCDE90AA128AFEDC00C7EF0E /* loadable-bundle-target.xcconfig */,
+				BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */,
+				BCDE90AC128AFEDC00C7EF0E /* release-style.xcconfig */,
+			);
+			name = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,62 +263,35 @@
 /* Begin XCBuildConfiguration section */
 		1DBD214908BA80EA00186707 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */;
 			buildSettings = {
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fusion-meta_Prefix.pch";
 				INFOPLIST_FILE = prefpane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_NAME = "fusion-meta";
-				WRAPPER_EXTENSION = prefPane;
-				ZERO_LINK = YES;
 			};
 			name = Debug;
 		};
 		1DBD214A08BA80EA00186707 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDE90AB128AFEDC00C7EF0E /* pref-pane-target.xcconfig */;
 			buildSettings = {
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fusion-meta_Prefix.pch";
 				INFOPLIST_FILE = prefpane/Info.plist;
-				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_NAME = "fusion-meta";
-				WRAPPER_EXTENSION = prefPane;
 			};
 			name = Release;
 		};
 		1DBD214D08BA80EA00186707 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDE90A9128AFEDC00C7EF0E /* debug-style.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Debug;
 		};
 		1DBD214E08BA80EA00186707 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCDE90AC128AFEDC00C7EF0E /* release-style.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_GC = supported;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				PREBINDING = NO;
-				SDKROOT = macosx10.6;
-				VALID_ARCHS = "i386 ppc x86_64";
 			};
 			name = Release;
 		};
