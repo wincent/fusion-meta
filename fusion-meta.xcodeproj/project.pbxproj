@@ -19,17 +19,17 @@
 
 /* Begin PBXFileReference section */
 		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167EFE841241C02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = prefpane/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		32DBCFA20370C41700C91783 /* fusion-meta_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "fusion-meta_Prefix.pch"; sourceTree = "<group>"; };
-		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		32DBCFA20370C41700C91783 /* fusion-meta_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "fusion-meta_Prefix.pch"; path = "prefpane/fusion-meta_Prefix.pch"; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = prefpane/Info.plist; sourceTree = "<group>"; };
 		8D202CF80486D31800D8A456 /* fusion-meta.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fusion-meta.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
-		F506C03C013D9D7901CA16C8 /* fusion_metaPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fusion_metaPref.h; sourceTree = "<group>"; };
-		F506C03D013D9D7901CA16C8 /* fusion_metaPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fusion_metaPref.m; sourceTree = "<group>"; };
-		F506C040013D9D8001CA16C8 /* fusion_metaPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = fusion_metaPref.tiff; sourceTree = "<group>"; };
-		F506C043013D9D8C01CA16C8 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/fusion_metaPref.xib; sourceTree = "<group>"; };
+		F506C03C013D9D7901CA16C8 /* fusion_metaPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fusion_metaPref.h; path = prefpane/fusion_metaPref.h; sourceTree = "<group>"; };
+		F506C03D013D9D7901CA16C8 /* fusion_metaPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = fusion_metaPref.m; path = prefpane/fusion_metaPref.m; sourceTree = "<group>"; };
+		F506C040013D9D8001CA16C8 /* fusion_metaPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = fusion_metaPref.tiff; path = prefpane/fusion_metaPref.tiff; sourceTree = "<group>"; };
+		F506C043013D9D8C01CA16C8 /* fusion_metaPref.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fusion_metaPref.xib; path = prefpane/English.lproj/fusion_metaPref.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +217,7 @@
 		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				089C167EFE841241C02AAC07 /* English */,
+				089C167EFE841241C02AAC07 /* InfoPlist.strings */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 		F506C042013D9D8C01CA16C8 /* fusion_metaPref.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				F506C043013D9D8C01CA16C8 /* English */,
+				F506C043013D9D8C01CA16C8 /* fusion_metaPref.xib */,
 			);
 			name = fusion_metaPref.xib;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fusion-meta_Prefix.pch";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = prefpane/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_NAME = "fusion-meta";
 				WRAPPER_EXTENSION = prefPane;
@@ -258,7 +258,7 @@
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fusion-meta_Prefix.pch";
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = prefpane/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
 				PRODUCT_NAME = "fusion-meta";
 				WRAPPER_EXTENSION = prefPane;
