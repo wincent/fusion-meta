@@ -25,7 +25,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BCA40AC0128B19B000727646 /* fusion-meta-prefpane.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 8D202CE80486D31800D8A456 /* Plug-Ins.prefPane */;
+			remoteGlobalIDString = 8D202CE80486D31800D8A456;
 			remoteInfo = "Plug-Ins.prefPane";
 		};
 /* End PBXContainerItemProxy section */
