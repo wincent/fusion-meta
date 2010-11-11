@@ -24,6 +24,15 @@
 
 #import "WOFMeta.h"
 
+#import "fusion-prefs/WOFPrefs.h"
+
 @implementation WOFMeta
+
+- (void)activate
+{
+    WOFPlugIn *plugIn = [[WOFPlugInManager sharedManager] plugInForIdentifier:@"com.wincent.fusion.prefs"];
+    WOFPrefs *prefs = plugIn.instance;
+    [prefs registerPreferencePaneForPlugIn:@"com.wincent.fusion.meta"];
+}
 
 @end
